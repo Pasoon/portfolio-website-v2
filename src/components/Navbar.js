@@ -47,7 +47,6 @@ const styles = theme => ({
     textTransform: 'initial',
     minWidth: 30,
     color: 'white',
-    fontWeight: '800',
     indicatorColor: 'white',
     transition: 'color 0.2s linear',
     webkitTransition: 'color 0.2s linear',
