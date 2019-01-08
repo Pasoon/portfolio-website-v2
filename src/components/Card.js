@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
-import './App.css';
-import './components/Navbar';
+import styled from 'styled-components';
+
+const Container = styled.div`
+    height: 340px;
+    width: 290px;
+`;
 
 
 class Card extends Component {
   render() {
     return (
-      <div/>
+      <Container/>
     );
   }
 }

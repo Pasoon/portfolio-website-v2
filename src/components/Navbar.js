@@ -1,5 +1,4 @@
 
-import Work from '@material-ui/icons/Work';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import Face from '@material-ui/icons/Face';
 import ImportantDevices from '@material-ui/icons/ImportantDevices';
@@ -11,6 +10,11 @@ import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
+import MyStory from '../pages/MyStory';
+import Work from '../pages/Work';
+import Projects from '../pages/Projects';
+import Contact from '../pages/Contact';
+import Footer from '../components/Footer';
 
 
 
@@ -130,10 +134,10 @@ class Navbar extends React.Component {
           index={this.state.value}
           onChangeIndex={this.handleChangeIndex}
         >
-          <TabContainer dir={theme.direction}>Item One</TabContainer>
-          <TabContainer dir={theme.direction}>Item Two</TabContainer>
-          <TabContainer dir={theme.direction}>Item Three</TabContainer>
-          <TabContainer dir={theme.direction}>Item Four</TabContainer>
+          <TabContainer dir={theme.direction}><MyStory/></TabContainer>
+          <TabContainer dir={theme.direction}><Work/></TabContainer>
+          <TabContainer dir={theme.direction}><Projects/></TabContainer>
+          <TabContainer dir={theme.direction}><Contact/></TabContainer>
         </SwipeableViews>
       </div>
     );

@@ -6,9 +6,9 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   position: absolute;
-  left:0;
-  bottom:0;
-  right:0;
+  left: 0;
+  bottom: -100;
+  right: 0;
   min-height: 200px;
   background-color: #F6F6F6;
   border-top: 1px solid #E9E9E9;
@@ -38,7 +38,6 @@ const VerticalWrapper = styled.div`
 `;
 
 const Heading = styled.p`
-  text-transform: uppercase;
   color: #CDCDCD;
   padding-top: 30px;
   font-weight: 600;
@@ -55,7 +54,7 @@ return (
     <HorizontalWrapper className='row'>
       <div className='six columns'>
         <VerticalWrapper>
-            <Heading>Get in Touch</Heading>
+            <Heading>GET IN TOUCH</Heading>
             <Text>Catch me on all my socials below!</Text>
             <SocialsWrapper>
               <FaInstagram/>
