@@ -18,24 +18,49 @@ const Container = styled.div`
     }
 `;
 
-const Image = styled.img`
+const ImageContainer = styled.div`
     height: 160px;
     width: 100%;
 `;
 
+const Image = styled.img`
+    height: 100%;
+    width: 100%;
+`;
+
 const Label = styled.div`
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
     height: 90px;
     width: 100%;
 `;
 
-const Icon = styled.div`
-    position: absolute;
-    top: 64%;
-    left: 50%;
-    border-radius: 10px;
+const Title = styled.p`
+    font-size: 20px;
+    font-weight: 800;
+`;
 
-    height: 50px;
-    width: 50px;
+const Text = styled.p`
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 200;
+`;
+
+const Icon = styled.div`
+    overflow: hidden;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    border: 5px solid white;
+    border-radius: 500px
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    -ms-border-radius: 500px;
+    -o-border-radius: 500px;
+
+    height: 40px;
+    width: 40px;
     background-color: black;
 
     -webkit-transform: translate(-50%, -50%);
@@ -44,13 +69,21 @@ const Icon = styled.div`
 `;
 
 
+
 class Card extends Component {
   render() {
     return (
       <Container>
-        <Image/>
-        <Icon/>
-        <Label/>
+        <ImageContainer>
+          <Image/>
+        </ImageContainer>
+        <Icon>
+          <Image src="http://www.androidfreeware.net/img2/ubereats-faster-delivery.png"/>
+        </Icon>
+        <Label>
+          <Title>Uber Eats</Title>
+          <Text>Jun 2018 - Sep 2018</Text>
+        </Label>
       </Container>
     );
   }
