@@ -9,6 +9,11 @@ const Container = styled.div`
     height: 700px;
     width: 100%;
     border: 1px solid;
+    padding-top: 50px;
+`;
+
+const WorkContent = styled.div`
+    height: 100%;
 `;
 
 
@@ -17,8 +22,12 @@ class Work extends Component {
   render() {
     return (
       <Container>
-          <br/>
-          <Card/>
+          <WorkContent>
+            <div className = "row">
+                <div className = "six columns"><Card/></div>
+                <div className = "six columns"><Card/></div>
+            </div>
+          </WorkContent>
       </Container>
     );
   }
