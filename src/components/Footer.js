@@ -7,7 +7,7 @@ const Container = styled.div`
   justify-content: center;
   position: absolute;
   left: 0;
-  bottom: -100;
+  bottom: -1;
   right: 0;
   min-height: 200px;
   background-color: #F6F6F6;

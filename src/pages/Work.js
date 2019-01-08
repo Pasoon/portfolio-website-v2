@@ -4,7 +4,8 @@ import Card from '../components/Card';
 
 const Container = styled.div`
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     height: 700px;
     width: 100%;
     border: 1px solid;
@@ -16,6 +17,7 @@ class Work extends Component {
   render() {
     return (
       <Container>
+          <br/>
           <Card/>
       </Container>
     );

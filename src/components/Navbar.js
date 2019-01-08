@@ -1,7 +1,4 @@
 
-import AccountCircle from '@material-ui/icons/AccountCircle';
-import Face from '@material-ui/icons/Face';
-import ImportantDevices from '@material-ui/icons/ImportantDevices';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
@@ -14,9 +11,6 @@ import MyStory from '../pages/MyStory';
 import Work from '../pages/Work';
 import Projects from '../pages/Projects';
 import Contact from '../pages/Contact';
-import Footer from '../components/Footer';
-
-
 
 
 function TabContainer({ children, dir }) {

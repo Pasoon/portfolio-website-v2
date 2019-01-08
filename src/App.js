@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 class App extends Component {
   render() {
     return (
-      <div style={{marginBottom: '200px'}} className="App">
+      <div className="App">
         <Banner/>
         <Navbar/>
         <Footer/>
