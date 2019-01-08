@@ -11,7 +11,6 @@ import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
-import img from '../images/space.jpg';
 
 
 
@@ -51,7 +50,8 @@ const styles = theme => ({
     transition: 'color 0.2s linear',
     webkitTransition: 'color 0.2s linear',
     mozTransition: 'color 0.2s linear',
-    fontWeight: theme.typography.fontWeightMedium,
+    fontWeight: '800',
+    fontSize: '13px',
     marginRight: theme.spacing.unit,
     fontFamily: [
       '-apple-system',
@@ -104,7 +104,6 @@ class Navbar extends React.Component {
             onChange={this.handleChange}
             indicatorColor="primary"
             textColor="primary"
-            inkBarStyle={{background: 'white'}}
             centered
             classes={{ root: classes.tabsRoot, selected: classes.tabSelected, indicator: classes.tabsIndicator}}
           >

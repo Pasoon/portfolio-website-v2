@@ -3,6 +3,7 @@ import './App.css';
 import './components/Navbar';
 import Navbar from './components/Navbar';
 import Banner from './components/Banner';
+import Footer from './components/Footer';
 
 
 class App extends Component {
@@ -11,6 +12,7 @@ class App extends Component {
       <div className="App">
         <Banner/>
         <Navbar/>
+        <Footer/>
       </div>
     );
   }
