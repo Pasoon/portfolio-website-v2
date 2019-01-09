@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const Container = styled.div`
-    height: 250px;
-    width: 280px;
-    box-shadow: 0px 0px 1px #777;
+    height: 290px;
+    width: 320px;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(173,173,173,1);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(173,173,173,1);
+    box-shadow: 0px 0px 3px 0px rgba(173,173,173,1); 
     position: relative;
 
     transition: box-shadow 0.2s linear;
@@ -19,7 +22,7 @@ const Container = styled.div`
 `;
 
 const ImageContainer = styled.div`
-    height: 160px;
+    height: 190px;
     width: 100%;
 `;
 
@@ -31,26 +34,29 @@ const Image = styled.img`
 const Label = styled.div`
     display: flex;
     flex-direction: column;
-    padding-top: 20px;
-    height: 90px;
+    padding-top: 25px;
+    font-family: 'Karla', sans-serif;
+    height: 100px;
     width: 100%;
 `;
 
 const Title = styled.p`
     font-size: 20px;
     font-weight: 800;
+    color: #454545;
 `;
 
-const Text = styled.p`
+const Description = styled.p`
     text-transform: uppercase;
     font-size: 15px;
     font-weight: 200;
+    color: #C7C4C4;
 `;
 
 const Icon = styled.div`
     overflow: hidden;
     position: absolute;
-    top: 60%;
+    top: 65%;
     left: 50%;
     border: 5px solid white;
     border-radius: 500px
@@ -75,18 +81,26 @@ class Card extends Component {
     return (
       <Container>
         <ImageContainer>
-          <Image/>
+          <Image src={this.props.image}/>
         </ImageContainer>
         <Icon>
-          <Image src="http://www.androidfreeware.net/img2/ubereats-faster-delivery.png"/>
+          <Image src={this.props.icon}/>
         </Icon>
         <Label>
-          <Title>Uber Eats</Title>
-          <Text>Jun 2018 - Sep 2018</Text>
+          <Title>{this.props.title}</Title>
+          <Description>{this.props.description}</Description>
         </Label>
       </Container>
     );
   }
+}
+
+
+Card.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
+  image: PropTypes.string,
+  icon: PropTypes.string
 }
 
 export default Card;

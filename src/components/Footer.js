@@ -68,7 +68,7 @@ return (
       <div className='six columns'>
         <VerticalWrapper>
             <Heading>© 2019 Pasoon Azimi</Heading>
-            <Text>This website was built using React.js</Text>
+            <Text>I built this site using React.js</Text>
         </VerticalWrapper>
       </div>
     </HorizontalWrapper>

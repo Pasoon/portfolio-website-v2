@@ -75,6 +75,7 @@ const Logo = styled.img`
     width: 75px;
 `;
 
+
 class Banner extends Component {
   render() {
     return (
