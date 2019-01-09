@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Card from '../components/Card';
+import welbiLogo from '../images/welbilogo.jpg';
+import nokiaLogo from '../images/nokialogo.jpg';
+import signiantLogo from '../images/signiantlogo.png';
+import telferLogo from '../images/telferlogo.png';
 
 const Container = styled.div`
     display: flex;
@@ -24,8 +28,32 @@ class Work extends Component {
       <Container>
           <WorkContent>
             <div className = "row">
-                <div className = "six columns"><Card/></div>
-                <div className = "six columns"><Card/></div>
+                <div className = "six columns">
+                    <Card 
+                        title={'Welbi'} 
+                        description={'Apr 2018 - Aug 2018'}
+                        icon={welbiLogo}/>
+                </div>
+                <div className = "six columns">
+                    <Card title={'Nokia'} 
+                        description={'Sep 2017 - Dec 2017'}
+                        image={'https://media.giphy.com/media/l0HlwWvBodzZVh0m4/giphy.gif'} 
+                        icon={nokiaLogo}/>
+                </div>
+            </div>
+            <div style={{paddingTop: '20px'}} className = "row">
+                <div className = "six columns">
+                    <Card 
+                        title={'Signiant'}
+                        description={'Jan 2017 - Apr 2017'}
+                        icon={signiantLogo}/>
+                </div>
+                <div className = "six columns">
+                    <Card 
+                        title={'Telfer IT'} 
+                        description={'Jun 2016 - Sep 2016'}
+                        icon={telferLogo}/>
+                </div>
             </div>
           </WorkContent>
       </Container>

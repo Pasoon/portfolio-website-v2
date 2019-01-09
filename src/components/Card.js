@@ -34,7 +34,7 @@ const Image = styled.img`
 const Label = styled.div`
     display: flex;
     flex-direction: column;
-    padding-top: 25px;
+    padding-top: 35px;
     font-family: 'Karla', sans-serif;
     height: 100px;
     width: 100%;
@@ -50,7 +50,7 @@ const Description = styled.p`
     text-transform: uppercase;
     font-size: 15px;
     font-weight: 200;
-    color: #C7C4C4;
+    color: #BBBABA;
 `;
 
 const Icon = styled.div`
@@ -67,11 +67,10 @@ const Icon = styled.div`
 
     height: 40px;
     width: 40px;
-    background-color: black;
 
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
-   transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 `;
 
 

@@ -28,7 +28,6 @@ const Text = styled.p`
     font-size: 15px;
     text-align: left;
     line-height: 1.7em;
-    text-indent: 50px;
 `;
 
 const ImageContainer = styled.div`
@@ -73,8 +72,7 @@ class MyStory extends Component {
                   <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}} className='eight columns'>
                       <Heading>ABOUT</Heading>
                       <TextContainer>
-                      <Text>I am a student currently studying Software Engineering at the University of Ottawa with plans to graduate in 2020.
-                            With experiences from various internships, side projects and influences I have acquired a technical and theoretical skillset which has allowed me to provide advanced, holistic and relevant solutions to problems.
+                      <Text>I am a student currently studying Software Engineering at the University of Ottawa with plans to graduate in 2020. With experiences from various internships, side projects and influences I have acquired a technical and theoretical skillset which has allowed me to provide advanced, holistic and relevant solutions to problems.
                           Aswell as development I have many hobbies and interests. Playing and watching soccer, playing video games, video editing, graphic design are all things I really enjoy to do on my spare time.
                            Here is my personal website, developed using React.js.</Text>
                         </TextContainer>

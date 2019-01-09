@@ -24,13 +24,13 @@ class Projects extends Component {
       <Container>
           <ProjectsContent>
             <div className = "row">
-                <div className = "six columns"><Card/></div>
-                <div className = "six columns"><Card/></div>
+                <div className = "six columns"><Card title={'munchies'}/></div>
+                <div className = "six columns"><Card title={'graded'}/></div>
             </div>
-            <div style={{paddingTop: '20px'}} className = "row">
+            {/* <div style={{paddingTop: '20px'}} className = "row">
                 <div className = "six columns"><Card/></div>
                 <div className = "six columns"><Card/></div>
-            </div>
+            </div> */}
           </ProjectsContent>
       </Container>
     );
