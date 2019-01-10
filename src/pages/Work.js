@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Card from '../components/Card';
+import welbiImage from '../images/welbi.png';
 import welbiLogo from '../images/welbilogo.jpg';
-import nokiaLogo from '../images/nokialogo.jpg';
+import nokiaImage from '../images/nokia.png';
+import nokiaLogo from '../images/nokialogo.png';
+import signiantImage from '../images/signiant.png'
 import signiantLogo from '../images/signiantlogo.png';
+import telferImage from '../images/telfer.png';
 import telferLogo from '../images/telferlogo.png';
 
 const Container = styled.div`
@@ -32,14 +36,14 @@ class Work extends Component {
                         title = {'Welbi'} 
                         description = {'Apr 2018 - Aug 2018'}
                         icon = {welbiLogo}
-                        image = {''}/>
+                        image = {welbiImage}/>
                 </div>
                 <div className = "six columns">
                     <Card 
                         title = {'Nokia'} 
                         description = {'Sep 2017 - Dec 2017'} 
                         icon = {nokiaLogo}
-                        image = {'https://media.giphy.com/media/l0HlwWvBodzZVh0m4/giphy.gif'}/>
+                        image = {nokiaImage}/>
                 </div>
             </div>
             <div style = {{paddingTop: '20px'}} className = "row">
@@ -48,14 +52,14 @@ class Work extends Component {
                         title = {'Signiant'}
                         description = {'Jan 2017 - Apr 2017'}
                         icon = {signiantLogo}
-                        image = {''}/>
+                        image = {signiantImage}/>
                 </div>
                 <div className = "six columns">
                     <Card 
                         title = {'Telfer IT'} 
                         description = {'Jun 2016 - Sep 2016'}
                         icon = {telferLogo}
-                        image = {''}/>
+                        image = {telferImage}/>
                 </div>
             </div>
           </WorkContent>

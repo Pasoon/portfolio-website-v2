@@ -121,6 +121,10 @@ class Navbar extends React.Component {
               classes={{ root: classes.tabRoot, selected: classes.tabSelected }}
               label="Contact" 
             />
+            <Tab 
+              classes={{ root: classes.tabRoot, selected: classes.tabSelected }}
+              label="Blog" 
+            />
           </Tabs>
         </AppBar>
         <SwipeableViews
