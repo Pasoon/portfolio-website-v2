@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
+
+const Wrapper = styled.div`
+    padding: 10px 5px 10px 5px;
+`;
+
 const Container = styled.div`
     height: 290px;
     width: 320px;
@@ -79,18 +84,20 @@ const Icon = styled.div`
 class CustomCard extends Component {
   render() {
     return (
-      <Container>
-        <ImageContainer>
-          <Image src={this.props.image}/>
-        </ImageContainer>
-        <Icon>
-          <Image src={this.props.icon}/>
-        </Icon>
-        <Label>
-          <Title>{this.props.title}</Title>
-          <Description>{this.props.description}</Description>
-        </Label>
-      </Container>
+      <Wrapper>
+        <Container>
+          <ImageContainer>
+            <Image src={this.props.image}/>
+          </ImageContainer>
+          <Icon>
+            <Image src={this.props.icon}/>
+          </Icon>
+          <Label>
+            <Title>{this.props.title}</Title>
+            <Description>{this.props.description}</Description>
+          </Label>
+        </Container>
+      </Wrapper>
     );
   }
 }

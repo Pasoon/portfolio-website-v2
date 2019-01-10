@@ -46,7 +46,7 @@ class Work extends Component {
                         image = {nokiaImage}/>
                 </div>
             </div>
-            <div style = {{paddingTop: '20px'}} className = "row">
+            <div className = "row">
                 <div className = "six columns">
                     <CustomCard 
                         title = {'Signiant'}
