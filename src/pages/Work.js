@@ -12,7 +12,6 @@ const Container = styled.div`
     justify-content: center;
     height: 700px;
     width: 100%;
-    border: 1px solid;
     padding-top: 50px;
 `;
 
@@ -30,29 +29,33 @@ class Work extends Component {
             <div className = "row">
                 <div className = "six columns">
                     <Card 
-                        title={'Welbi'} 
-                        description={'Apr 2018 - Aug 2018'}
-                        icon={welbiLogo}/>
+                        title = {'Welbi'} 
+                        description = {'Apr 2018 - Aug 2018'}
+                        icon = {welbiLogo}
+                        image = {''}/>
                 </div>
                 <div className = "six columns">
-                    <Card title={'Nokia'} 
-                        description={'Sep 2017 - Dec 2017'}
-                        image={'https://media.giphy.com/media/l0HlwWvBodzZVh0m4/giphy.gif'} 
-                        icon={nokiaLogo}/>
+                    <Card 
+                        title = {'Nokia'} 
+                        description = {'Sep 2017 - Dec 2017'} 
+                        icon = {nokiaLogo}
+                        image = {'https://media.giphy.com/media/l0HlwWvBodzZVh0m4/giphy.gif'}/>
                 </div>
             </div>
-            <div style={{paddingTop: '20px'}} className = "row">
+            <div style = {{paddingTop: '20px'}} className = "row">
                 <div className = "six columns">
                     <Card 
-                        title={'Signiant'}
-                        description={'Jan 2017 - Apr 2017'}
-                        icon={signiantLogo}/>
+                        title = {'Signiant'}
+                        description = {'Jan 2017 - Apr 2017'}
+                        icon = {signiantLogo}
+                        image = {''}/>
                 </div>
                 <div className = "six columns">
                     <Card 
-                        title={'Telfer IT'} 
-                        description={'Jun 2016 - Sep 2016'}
-                        icon={telferLogo}/>
+                        title = {'Telfer IT'} 
+                        description = {'Jun 2016 - Sep 2016'}
+                        icon = {telferLogo}
+                        image = {''}/>
                 </div>
             </div>
           </WorkContent>

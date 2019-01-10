@@ -6,9 +6,8 @@ const Container = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 650px;
+    height: 700px;
     width: 100%;
-    border: 1px solid;
     padding-top: 50px;
 `;
 
@@ -64,13 +63,13 @@ class MyStory extends Component {
           <ProjectsContent>
               <div className='row'>
                   <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}} className='four columns'>
-                    <Heading>___________</Heading>
+                    <Heading>IT'S A ME</Heading>
                       <ImageContainer>
                         <MyImage src={Pasoon}/>
                       </ImageContainer>
                   </div>
                   <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}} className='eight columns'>
-                      <Heading>ABOUT</Heading>
+                      <Heading>HI STRANGER</Heading>
                       <TextContainer>
                       <Text>I am a student currently studying Software Engineering at the University of Ottawa with plans to graduate in 2020. With experiences from various internships, side projects and influences I have acquired a technical and theoretical skillset which has allowed me to provide advanced, holistic and relevant solutions to problems.
                           Aswell as development I have many hobbies and interests. Playing and watching soccer, playing video games, video editing, graphic design are all things I really enjoy to do on my spare time.

@@ -8,7 +8,6 @@ const Container = styled.div`
     justify-content: center;
     height: 650px;
     width: 100%;
-    border: 1px solid;
     padding-top: 50px;
 `;
 
@@ -24,8 +23,20 @@ class Projects extends Component {
       <Container>
           <ProjectsContent>
             <div className = "row">
-                <div className = "six columns"><Card title={'munchies'}/></div>
-                <div className = "six columns"><Card title={'graded'}/></div>
+                <div className = "six columns">
+                    <Card 
+                        title={'munchies'}
+                        description={'React.js / Flask'}
+                        icon={''}
+                        image={''}/>
+                </div>
+                <div className = "six columns">
+                    <Card 
+                        title={'graded'}
+                        description={'Android'}
+                        icon={''}
+                        image={''}/>
+                </div>
             </div>
             {/* <div style={{paddingTop: '20px'}} className = "row">
                 <div className = "six columns"><Card/></div>

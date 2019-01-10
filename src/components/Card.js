@@ -42,7 +42,7 @@ const Label = styled.div`
 
 const Title = styled.p`
     font-size: 20px;
-    font-weight: 800;
+    font-weight: 600;
     color: #454545;
 `;
 
@@ -55,6 +55,7 @@ const Description = styled.p`
 
 const Icon = styled.div`
     overflow: hidden;
+    object-fit: cover;
     position: absolute;
     top: 65%;
     left: 50%;
