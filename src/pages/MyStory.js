@@ -1,6 +1,15 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Pasoon from '../images/pasoon.jpg';
+import CustomCard from '../components/CustomCard';
+import welbiImage from '../images/welbi.png';
+import welbiLogo from '../images/welbilogo.jpg';
+import nokiaImage from '../images/nokia.png';
+import nokiaLogo from '../images/nokialogo.png';
+import signiantImage from '../images/signiant.png'
+import signiantLogo from '../images/signiantlogo.png';
+import telferImage from '../images/telfer.png';
+import telferLogo from '../images/telferlogo.png';
 
 const Container = styled.div`
     display: flex;
@@ -8,10 +17,10 @@ const Container = styled.div`
     justify-content: center;
     height: 700px;
     width: 100%;
-    padding-top: 50px;
+    padding-top: 10px;
 `;
 
-const ProjectsContent = styled.div`
+const MyStoryContent = styled.div`
     width: 700px;
     height: 100%;
 `;
@@ -60,7 +69,7 @@ class MyStory extends Component {
   render() {
     return (
       <Container>
-          <ProjectsContent>
+          <MyStoryContent>
               <div className='row'>
                   <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}} className='four columns'>
                     <Heading>IT'S A ME</Heading>
@@ -77,7 +86,40 @@ class MyStory extends Component {
                         </TextContainer>
                   </div>
               </div>
-          </ProjectsContent>
+              <Heading> EXPERIENCE </Heading>
+              <div className = "row">
+                <div className = "six columns">
+                    <CustomCard 
+                        title = {'Welbi'} 
+                        description = {'Apr 2018 - Aug 2018'}
+                        icon = {welbiLogo}
+                        image = {welbiImage}/>
+                </div>
+                <div className = "six columns">
+                    <CustomCard 
+                        title = {'Nokia'} 
+                        description = {'Sep 2017 - Dec 2017'} 
+                        icon = {nokiaLogo}
+                        image = {nokiaImage}/>
+                </div>
+            </div>
+            <div className = "row">
+                <div className = "six columns">
+                    <CustomCard 
+                        title = {'Signiant'}
+                        description = {'Jan 2017 - Apr 2017'}
+                        icon = {signiantLogo}
+                        image = {signiantImage}/>
+                </div>
+                <div className = "six columns">
+                    <CustomCard 
+                        title = {'Telfer'} 
+                        description = {'Jun 2016 - Sep 2016'}
+                        icon = {telferLogo}
+                        image = {telferImage}/>
+                </div>
+            </div>
+          </MyStoryContent>
       </Container>
         
     );
