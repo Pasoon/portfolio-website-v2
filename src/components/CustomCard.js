@@ -76,7 +76,7 @@ const Icon = styled.div`
 
 
 
-class Card extends Component {
+class CustomCard extends Component {
   render() {
     return (
       <Container>
@@ -96,11 +96,11 @@ class Card extends Component {
 }
 
 
-Card.propTypes = {
+CustomCard.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   image: PropTypes.string,
   icon: PropTypes.string
 }
 
-export default Card;
+export default CustomCard;

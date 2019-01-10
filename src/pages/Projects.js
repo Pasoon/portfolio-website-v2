@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import Card from '../components/Card';
+import CustomCard from '../components/CustomCard';
 
 const Container = styled.div`
     display: flex;
@@ -24,14 +24,14 @@ class Projects extends Component {
           <ProjectsContent>
             <div className = "row">
                 <div className = "six columns">
-                    <Card 
+                    <CustomCard 
                         title={'munchies'}
                         description={'React.js / Flask'}
                         icon={''}
                         image={''}/>
                 </div>
                 <div className = "six columns">
-                    <Card 
+                    <CustomCard 
                         title={'graded'}
                         description={'Android'}
                         icon={''}
@@ -39,8 +39,8 @@ class Projects extends Component {
                 </div>
             </div>
             {/* <div style={{paddingTop: '20px'}} className = "row">
-                <div className = "six columns"><Card/></div>
-                <div className = "six columns"><Card/></div>
+                <div className = "six columns"><CustomCard/></div>
+                <div className = "six columns"><CustomCard/></div>
             </div> */}
           </ProjectsContent>
       </Container>

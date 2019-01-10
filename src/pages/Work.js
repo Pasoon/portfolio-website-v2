@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import Card from '../components/Card';
+import CustomCard from '../components/CustomCard';
 import welbiImage from '../images/welbi.png';
 import welbiLogo from '../images/welbilogo.jpg';
 import nokiaImage from '../images/nokia.png';
@@ -32,14 +32,14 @@ class Work extends Component {
           <WorkContent>
             <div className = "row">
                 <div className = "six columns">
-                    <Card 
+                    <CustomCard 
                         title = {'Welbi'} 
                         description = {'Apr 2018 - Aug 2018'}
                         icon = {welbiLogo}
                         image = {welbiImage}/>
                 </div>
                 <div className = "six columns">
-                    <Card 
+                    <CustomCard 
                         title = {'Nokia'} 
                         description = {'Sep 2017 - Dec 2017'} 
                         icon = {nokiaLogo}
@@ -48,15 +48,15 @@ class Work extends Component {
             </div>
             <div style = {{paddingTop: '20px'}} className = "row">
                 <div className = "six columns">
-                    <Card 
+                    <CustomCard 
                         title = {'Signiant'}
                         description = {'Jan 2017 - Apr 2017'}
                         icon = {signiantLogo}
                         image = {signiantImage}/>
                 </div>
                 <div className = "six columns">
-                    <Card 
-                        title = {'Telfer IT'} 
+                    <CustomCard 
+                        title = {'Telfer'} 
                         description = {'Jun 2016 - Sep 2016'}
                         icon = {telferLogo}
                         image = {telferImage}/>
