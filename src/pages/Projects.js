@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import CustomCard from '../components/CustomCard';
+import munchiesImage from '../images/munchies.png';
+import munchiesLogo from '../images/munchieslogo.png';
+import gradedImage from '../images/graded.png';
+import gradedLogo from '../images/gradedlogo.png';
 
 const Container = styled.div`
     display: flex;
@@ -27,15 +31,15 @@ class Projects extends Component {
                     <CustomCard 
                         title={'munchies'}
                         description={'React.js / Flask'}
-                        icon={''}
-                        image={''}/>
+                        icon={munchiesLogo}
+                        image={munchiesImage}/>
                 </div>
                 <div className = "six columns">
                     <CustomCard 
                         title={'graded'}
                         description={'Android'}
-                        icon={''}
-                        image={''}/>
+                        icon={gradedLogo}
+                        image={gradedImage}/>
                 </div>
             </div>
             {/* <div style={{paddingTop: '20px'}} className = "row">
