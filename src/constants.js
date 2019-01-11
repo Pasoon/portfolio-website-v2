@@ -1,3 +1,4 @@
+// ------------ INTERNSHIPS -------------
 import welbiImage from './images/welbi.png';
 import welbiLogo from './images/welbilogo.jpg';
 import nokiaImage from './images/nokia.png';
@@ -7,7 +8,13 @@ import signiantLogo from './images/signiantlogo.png';
 import telferImage from './images/telfer.png';
 import telferLogo from './images/telferlogo.png';
 
+// ------------ PROJECTS -------------
+import munchiesImage from './images/munchies.png';
+import munchiesLogo from './images/munchieslogo.png';
+import gradedImage from './images/graded.png';
+import gradedLogo from './images/gradedlogo.png';
 
+// ------------ INTERNSHIPS -------------
 export const WELBI = {
     title: 'Welbi',
     role: 'Full Stack Developer',
@@ -41,5 +48,24 @@ export const TELFER = {
     date: 'Jun 2016 - Sep 2016',
     logo: telferLogo,
     image: telferImage,
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra dignissim convallis. Phasellus vehicula augue arcu, quis eleifend erat commodo ac. Suspendisse eget euismod est. Ut pharetra volutpat mi sed gravida. Proin ornare elementum scelerisque. Donec sed condimentum lacus. Donec auctor euismod mauris. Phasellus ultrices in velit eu varius. Quisque aliquam odio ex, sed feugiat lorem pellentesque ac. Morbi consectetur dictum blandit.',
+}
+
+// ------------ PROJECTS -------------
+export const MUNCHIES = {
+    title: 'munchies',
+    type: 'Web Application',
+    stack: 'React.js / Flask',
+    logo: munchiesLogo,
+    image: munchiesImage,
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra dignissim convallis. Phasellus vehicula augue arcu, quis eleifend erat commodo ac. Suspendisse eget euismod est. Ut pharetra volutpat mi sed gravida. Proin ornare elementum scelerisque. Donec sed condimentum lacus. Donec auctor euismod mauris. Phasellus ultrices in velit eu varius. Quisque aliquam odio ex, sed feugiat lorem pellentesque ac. Morbi consectetur dictum blandit.',
+}
+
+export const GRADED = {
+    title: 'graded',
+    type: 'Android Application',
+    stack: 'Android',
+    logo: gradedLogo,
+    image: gradedImage,
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra dignissim convallis. Phasellus vehicula augue arcu, quis eleifend erat commodo ac. Suspendisse eget euismod est. Ut pharetra volutpat mi sed gravida. Proin ornare elementum scelerisque. Donec sed condimentum lacus. Donec auctor euismod mauris. Phasellus ultrices in velit eu varius. Quisque aliquam odio ex, sed feugiat lorem pellentesque ac. Morbi consectetur dictum blandit.',
 }

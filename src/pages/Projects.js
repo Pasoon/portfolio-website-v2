@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import CustomCard from '../components/CustomCard';
-import munchiesImage from '../images/munchies.png';
-import munchiesLogo from '../images/munchieslogo.png';
-import gradedImage from '../images/graded.png';
-import gradedLogo from '../images/gradedlogo.png';
+import * as constants from '../constants';
+
 
 const Container = styled.div`
     display: flex;
@@ -29,17 +27,17 @@ class Projects extends Component {
             <div className = "row">
                 <div className = "six columns">
                     <CustomCard 
-                        title={'munchies'}
-                        description={'React.js / Flask'}
-                        icon={munchiesLogo}
-                        image={munchiesImage}/>
+                        title={constants.MUNCHIES.title}
+                        description={constants.MUNCHIES.stack}
+                        icon={constants.MUNCHIES.logo}
+                        image={constants.MUNCHIES.image}/>
                 </div>
                 <div className = "six columns">
                     <CustomCard 
-                        title={'graded'}
-                        description={'Android'}
-                        icon={gradedLogo}
-                        image={gradedImage}/>
+                        title={constants.GRADED.title}
+                        description={constants.GRADED.stack}
+                        icon={constants.GRADED.logo}
+                        image={constants.GRADED.image}/>
                 </div>
             </div>
             {/* <div style={{paddingTop: '20px'}} className = "row">
