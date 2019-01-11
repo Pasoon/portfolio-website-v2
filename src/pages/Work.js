@@ -17,8 +17,6 @@ const WorkContent = styled.div`
     height: 100%;
 `;
 
-
-
 class Work extends Component {
     constructor(props) {
         super(props);
@@ -41,6 +39,14 @@ class Work extends Component {
             })
         }
       }
+
+
+    componentWillReceiveProps(){
+        this.setState({
+            showDetails: false,
+            details: '',
+        })
+    }
 
   render() {
     return (

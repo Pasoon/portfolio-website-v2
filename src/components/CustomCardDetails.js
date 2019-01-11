@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import telferLogo from '../images/telferlogo.png';
 
 const Container = styled.div`
     display: flex;
