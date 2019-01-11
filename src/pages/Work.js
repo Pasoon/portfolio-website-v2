@@ -1,14 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import CustomCard from '../components/CustomCard';
-import welbiImage from '../images/welbi.png';
-import welbiLogo from '../images/welbilogo.jpg';
-import nokiaImage from '../images/nokia.png';
-import nokiaLogo from '../images/nokialogo.png';
-import signiantImage from '../images/signiant.png'
-import signiantLogo from '../images/signiantlogo.png';
-import telferImage from '../images/telfer.png';
-import telferLogo from '../images/telferlogo.png';
+import Internships from '../components/Internships';
+import CustomCardDetails from '../components/CustomCardDetails';
+import Fade from 'react-reveal/Fade';
 
 const Container = styled.div`
     display: flex;
@@ -26,42 +20,37 @@ const WorkContent = styled.div`
 
 
 class Work extends Component {
+    constructor(props) {
+        super(props);
+        this.state = { 
+            showDetails: false,
+            details: '' 
+        };
+
+        this.cardCallback = (dataFromChild) => {
+            this.setState({
+                showDetails: dataFromChild.showDetails,
+                details: dataFromChild.details,
+            });
+        }
+
+        this.detailsCallback = () => {
+            this.setState({
+                showDetails: false,
+                details: '',
+            })
+        }
+      }
+
   render() {
     return (
       <Container>
           <WorkContent>
-            <div className = "row">
-                <div className = "six columns">
-                    <CustomCard 
-                        title = {'Welbi'} 
-                        description = {'Apr 2018 - Aug 2018'}
-                        icon = {welbiLogo}
-                        image = {welbiImage}/>
-                </div>
-                <div className = "six columns">
-                    <CustomCard 
-                        title = {'Nokia'} 
-                        description = {'Sep 2017 - Dec 2017'} 
-                        icon = {nokiaLogo}
-                        image = {nokiaImage}/>
-                </div>
-            </div>
-            <div className = "row">
-                <div className = "six columns">
-                    <CustomCard 
-                        title = {'Signiant'}
-                        description = {'Jan 2017 - Apr 2017'}
-                        icon = {signiantLogo}
-                        image = {signiantImage}/>
-                </div>
-                <div className = "six columns">
-                    <CustomCard 
-                        title = {'Telfer'} 
-                        description = {'Jun 2016 - Sep 2016'}
-                        icon = {telferLogo}
-                        image = {telferImage}/>
-                </div>
-            </div>
+              {
+                  this.state.showDetails ? 
+                    <CustomCardDetails details={this.state.details} callbackFromParent={this.detailsCallback}/> : 
+                    <Internships callbackFromParent={this.cardCallback}/>
+              }
           </WorkContent>
       </Container>
     );

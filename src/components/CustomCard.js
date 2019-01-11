@@ -14,6 +14,7 @@ const Container = styled.div`
     -moz-box-shadow: 0px 0px 3px 0px rgba(173,173,173,1);
     box-shadow: 0px 0px 3px 0px rgba(173,173,173,1); 
     position: relative;
+    cursor: pointer;
 
     transition: box-shadow 0.2s linear;
     -webkit-transition: box-shadow 0.2s linear;
@@ -85,7 +86,7 @@ class CustomCard extends Component {
   render() {
     return (
       <Wrapper>
-        <Container>
+        <Container onClick={this.props.onClick}>
           <ImageContainer>
             <Image src={this.props.image}/>
           </ImageContainer>
@@ -107,7 +108,8 @@ CustomCard.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   image: PropTypes.string,
-  icon: PropTypes.string
+  icon: PropTypes.string,
+  onClick: PropTypes.func
 }
 
 export default CustomCard;

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Grid from '@material-ui/core/Grid';
 import styled from 'styled-components';
 import img from '../images/space.jpg';
 import logo from '../images/icon.png';
