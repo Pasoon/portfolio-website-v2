@@ -1,14 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import CustomCard from './CustomCard';
-import welbiImage from '../images/welbi.png';
-import welbiLogo from '../images/welbilogo.jpg';
-import nokiaImage from '../images/nokia.png';
-import nokiaLogo from '../images/nokialogo.png';
-import signiantImage from '../images/signiant.png'
-import signiantLogo from '../images/signiantlogo.png';
-import telferImage from '../images/telfer.png';
-import telferLogo from '../images/telferlogo.png';
+import * as constants from '../constants';
 
 const Container = styled.div`
 `;
@@ -24,8 +17,6 @@ class Internships extends Component {
                 date: '',
                 image: '',
                 description: '',
-                color1: '',
-                color2: '',
             }
         };
     }
@@ -43,82 +34,42 @@ class Internships extends Component {
 
     render() {
 
-        const welbiDetails = {
-            title: 'Welbi',
-            role: 'Full Stack Developer',
-            date: 'Apr 2018 - Aug 2018',
-            image: '',
-            description: '',
-            color1: '',
-            color2: ''
-        }
-
-        const nokiaDetails = {
-            title: 'Nokia',
-            role: 'Software Designer',
-            date: 'Sep 2017 - Dec 2017',
-            image: '',
-            description: '',
-            color1: '',
-            color2: ''
-        }
-
-        const signiantDetails = {
-            title: 'Signiant',
-            role: 'Software Developer',
-            date: 'Jan 2017 - Apr 2017',
-            image: '',
-            description: '',
-            color1: '',
-            color2: ''
-        }
-
-        const telferDetails = {
-            title: 'Telfer',
-            role: 'Junior Programmer',
-            date: 'Jun 2016 - Sep 2016',
-            image: '',
-            description: '',
-            color1: '',
-            color2: ''
-        }
-
         return (
             <Container>
                 <div className = "row">
                     <div className = "six columns">
                         <CustomCard 
-                            title = {'Welbi'} 
-                            description = {'Apr 2018 - Aug 2018'}
-                            icon = {welbiLogo}
-                            image = {welbiImage}
-                            onClick = {()=>this.handleCardClick(welbiDetails)}/>
+                            title = {constants.WELBI.title} 
+                            description = {constants.WELBI.date}
+                            icon = {constants.WELBI.logo}
+                            image = {constants.WELBI.image}
+                            onClick = {()=>this.handleCardClick(constants.WELBI)}/>
                     </div>
                     <div className = "six columns">
                         <CustomCard 
-                            title = {'Nokia'} 
-                            description = {'Sep 2017 - Dec 2017'} 
-                            icon = {nokiaLogo}
-                            image = {nokiaImage}
-                            onClick = {()=>this.handleCardClick(nokiaDetails)}/>
+                            title = {constants.NOKIA.title} 
+                            description = {constants.NOKIA.date}
+                            icon = {constants.NOKIA.logo}
+                            image = {constants.NOKIA.image}
+                            onClick = {()=>this.handleCardClick(constants.NOKIA)}/>
                     </div>
                 </div>
                 <div className = "row">
                     <div className = "six columns">
                         <CustomCard 
-                            title = {'Signiant'}
-                            description = {'Jan 2017 - Apr 2017'}
-                            icon = {signiantLogo}
-                            image = {signiantImage}
-                            onClick = {()=>this.handleCardClick(signiantDetails)}/>
+                            title = {constants.SIGNIANT.title} 
+                            description = {constants.SIGNIANT.date}
+                            icon = {constants.SIGNIANT.logo}
+                            image = {constants.SIGNIANT.image}
+                            onClick = {()=>this.handleCardClick(constants.SIGNIANT)}/>
                     </div>
                     <div className = "six columns">
                         <CustomCard 
-                            title = {'Telfer'} 
-                            description = {'Jun 2016 - Sep 2016'}
-                            icon = {telferLogo}
-                            image = {telferImage}
-                            onClick = {()=>this.handleCardClick(telferDetails)}/>
+                            title = {constants.TELFER.title} 
+                            description = {constants.TELFER.date}
+                            icon = {constants.TELFER.logo}
+                            image = {constants.TELFER.image}
+                            onClick = {()=>this.handleCardClick(constants.TELFER)}/>
                     </div>
                 </div>
             </Container>
