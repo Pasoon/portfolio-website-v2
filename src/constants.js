@@ -1,4 +1,3 @@
-// ------------ INTERNSHIPS -------------
 import welbiImage from './images/welbi.png';
 import welbiLogo from './images/welbilogo.jpg';
 import nokiaImage from './images/nokia.png';
@@ -8,7 +7,7 @@ import signiantLogo from './images/signiantlogo.png';
 import telferImage from './images/telfer.png';
 import telferLogo from './images/telferlogo.png';
 
-// ------------ PROJECTS -------------
+
 import munchiesImage from './images/munchies.png';
 import munchiesLogo from './images/munchieslogo.png';
 import gradedImage from './images/graded.png';

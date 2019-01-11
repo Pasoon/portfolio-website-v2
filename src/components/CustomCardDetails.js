@@ -76,7 +76,6 @@ class CustomCardDetails extends Component {
                     </div>
 
                 </div>
-                <button onClick={this.props.callbackFromParent}>Close</button>
             </Container>
         )
     }
