@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+const emoji = require('emoji-dictionary');
 
 const Container = styled.div`
     display: flex;
     flex-direction: column;
     height: 400px;
-    width: 700px;
+    width: 750px;
     padding: 20px 20px 20px 20px;
     background-color: white;
 `;
@@ -51,7 +52,28 @@ const Heading = styled.p`
   text-align: left;
 `;
 
+const List = styled.ul`
+    padding-top: 10px;
+    font-weight: 700;
+    font-size: 12px;
+    list-style: none;
+    text-align: left;
+`;
+
 class CustomCardDetails extends Component {
+
+    toolsAndTasks = (tasks) => {
+        console.log(emoji.names)
+        console.log(emoji.unicode)
+        const listItems = tasks.map((task) => 
+            <li>{emoji.getUnicode(task.emoji) + ' ' + task.title}</li>
+        );
+        
+        return (
+            <List>{listItems}</List>
+        )
+    }
+
     render() {
         return (
             <Container>
@@ -67,15 +89,17 @@ class CustomCardDetails extends Component {
                     </div>
                 </div>
                 <div className='row'>
-                    <div className='eight columns'>
+                    <div className='nine columns'>
                         <Heading>OVERVIEW</Heading>
                         <Text>{this.props.details.description}</Text>
                     </div>
-                    <div className='four columns'>
-                        <Heading>HATS WORN</Heading>
+                    <div className='three columns'>
+                        <Heading>TASKS</Heading>
+                        {this.toolsAndTasks(this.props.details.tasks)}
                     </div>
 
                 </div>
+                {/* <button onClick={this.props.callbackFromParent}>Close</button> */}
             </Container>
         )
     }

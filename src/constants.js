@@ -21,6 +21,32 @@ export const WELBI = {
     logo: welbiLogo,
     image: welbiImage,
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra dignissim convallis. Phasellus vehicula augue arcu, quis eleifend erat commodo ac. Suspendisse eget euismod est. Ut pharetra volutpat mi sed gravida. Proin ornare elementum scelerisque. Donec sed condimentum lacus. Donec auctor euismod mauris. Phasellus ultrices in velit eu varius. Quisque aliquam odio ex, sed feugiat lorem pellentesque ac. Morbi consectetur dictum blandit.',
+    tasks: [
+        {
+            title: 'Web Dev',
+            emoji: 'desktop_computer'
+        },
+        {
+            title: 'Mobile Dev',
+            emoji: 'iphone'
+        },
+        {
+            title: 'Designing',
+            emoji: 'man_artist'
+        },
+        {
+            title: 'Concepting',
+            emoji: 'pencil2'
+        },
+        {
+            title: 'Prototyping',
+            emoji: 'recycle'
+        },
+        {
+            title: 'Test-Driven Dev',
+            emoji: 'hammer_and_wrench'
+        },
+    ]
 }
 
 export const NOKIA = {
@@ -30,6 +56,29 @@ export const NOKIA = {
     logo: nokiaLogo,
     image: nokiaImage,
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra dignissim convallis. Phasellus vehicula augue arcu, quis eleifend erat commodo ac. Suspendisse eget euismod est. Ut pharetra volutpat mi sed gravida. Proin ornare elementum scelerisque. Donec sed condimentum lacus. Donec auctor euismod mauris. Phasellus ultrices in velit eu varius. Quisque aliquam odio ex, sed feugiat lorem pellentesque ac. Morbi consectetur dictum blandit.',
+    tasks: [
+        {
+            title: 'Web Dev',
+            emoji: 'desktop_computer'
+        },
+        {
+            title: 'Networking',
+            emoji: 'house'
+        },
+        {
+            title: 'Designing',
+            emoji: 'man_artist'
+        },
+        {
+            title: 'Requirement Gathering',
+            emoji: 'ear'
+        },
+        {
+            title: 'Testing-Driven Dev',
+            emoji: 'hammer_and_wrench'
+        },
+
+    ]
 }
 
 export const SIGNIANT = {
@@ -39,6 +88,25 @@ export const SIGNIANT = {
     logo: signiantLogo,
     image: signiantImage,
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra dignissim convallis. Phasellus vehicula augue arcu, quis eleifend erat commodo ac. Suspendisse eget euismod est. Ut pharetra volutpat mi sed gravida. Proin ornare elementum scelerisque. Donec sed condimentum lacus. Donec auctor euismod mauris. Phasellus ultrices in velit eu varius. Quisque aliquam odio ex, sed feugiat lorem pellentesque ac. Morbi consectetur dictum blandit.',
+    tasks: [
+        {
+            title: 'Web Dev',
+            emoji: 'desktop_computer'
+        },
+        {
+            title: 'Networking',
+            emoji: 'house'
+        },
+        {
+            title: 'Concepting',
+            emoji: 'man_artist'
+        },
+        {
+            title: 'Testing-Driven Dev',
+            emoji: 'hammer_and_wrench'
+        },
+
+    ]
 }
 
 export const TELFER = {
@@ -48,6 +116,25 @@ export const TELFER = {
     logo: telferLogo,
     image: telferImage,
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra dignissim convallis. Phasellus vehicula augue arcu, quis eleifend erat commodo ac. Suspendisse eget euismod est. Ut pharetra volutpat mi sed gravida. Proin ornare elementum scelerisque. Donec sed condimentum lacus. Donec auctor euismod mauris. Phasellus ultrices in velit eu varius. Quisque aliquam odio ex, sed feugiat lorem pellentesque ac. Morbi consectetur dictum blandit.',
+    tasks: [
+        {
+            title: 'Web Dev',
+            emoji: 'desktop_computer'
+        },
+        {
+            title: 'Documenting',
+            emoji: 'pencil2'
+        },
+        {
+            title: 'Requirement Gathering',
+            emoji: 'ear'
+        },
+        {
+            title: 'Testing',
+            emoji: 'man_scientist'
+        },
+
+    ]
 }
 
 // ------------ PROJECTS -------------

@@ -71,10 +71,30 @@ class MyStory extends Component {
                   <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}} className='eight columns'>
                       <Heading>HI STRANGER</Heading>
                       <TextContainer>
-                      <Text>I am a Software Developer based in the nations capital, currently studying Software Engineering at the University of Ottawa. With experiences from various internships, side projects and influences I have acquired a technical and theoretical skillset which has allowed me to provide advanced, holistic and relevant solutions to problems.
-                          Aswell as development I have many hobbies and interests. Playing and watching soccer, playing video games, video editing, graphic design are all things I really enjoy to do on my spare time.
+                      <Text>I am a Software Developer based in Ottawa, currently studying 
+                          Software Engineering at the University of Ottawa. 
+                          My experiences from various internships, side projects and influences span all phases 
+                          of the development process.  My interest in technology and artistic/creative side at heart has
+                          led me into this field. Software Engineering provides myself and others outlet to bring ideas into reality. 
+                          Aswell as development I have many hobbies and interests. 
+                           Playing and watching soccer, playing video games, video editing, 
+                           graphic design are all things I really enjoy to do on my spare time.
                            Here is my personal website, developed using React.js.</Text>
                         </TextContainer>
+                  </div>
+              </div>
+              <div className='row'>
+                  <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}} className='four columns'>
+                    <Heading>EDUCATION</Heading>
+                    <p>UNIVERSITY OF OTTAWA</p>
+                    <p>BSc. Software Engineering</p>
+                    <p>Graduating Winter 2020</p>
+                    <p>CGPA: 8.3/10</p>
+                  </div>
+                  <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}} className='eight columns'>
+                      <Heading>RESEARCH</Heading>
+                      <a href={require('../documents/Implications_Blockchain.pdf')}>Implications of Blockchain</a>
+                      <a href={require('../documents/Benefits_Antivirus.pdf')}>Benefits of Antivirus</a>
                   </div>
               </div>
           </MyStoryContent>
