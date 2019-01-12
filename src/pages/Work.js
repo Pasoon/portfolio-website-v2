@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Internships from '../components/Internships';
-import CustomCardDetails from '../components/CustomCardDetails';
+import WorkDetails from '../components/WorkDetails';
 import Container from '../components/elements/Container';
 import Fade from 'react-reveal/Fade';
 
@@ -46,7 +46,7 @@ class Work extends Component {
           <WorkContent>
               {
                   this.state.showDetails ? 
-                    <CustomCardDetails details={this.state.details} callbackFromParent={this.detailsCallback}/> : 
+                    <WorkDetails details={this.state.details} callbackFromParent={this.detailsCallback}/> : 
                     <Internships callbackFromParent={this.cardCallback}/>
               }
           </WorkContent>

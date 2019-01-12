@@ -25,7 +25,7 @@ const Icon = styled.div`
     width: 65px;
 `;
 
-const Type = styled.p`
+const Stack = styled.p`
     text-transform: uppercase;
     font-size: 15px;
     font-weight: 200;
@@ -60,19 +60,19 @@ const List = styled.ul`
     text-align: left;
 `;
 
-class CustomCardDetails extends Component {
+class ProjectDetails extends Component {
 
-    toolsAndTasks = (tasks) => {
-        console.log(emoji.names)
-        console.log(emoji.unicode)
-        const listItems = tasks.map((task) => 
-            <li>{emoji.getUnicode(task.emoji) + ' ' + task.title}</li>
-        );
+    // tools = (tasks) => {
+    //     console.log(emoji.names)
+    //     console.log(emoji.unicode)
+    //     const listItems = tasks.map((task) => 
+    //         <li>{emoji.getUnicode(task.emoji) + ' ' + task.title}</li>
+    //     );
         
-        return (
-            <List>{listItems}</List>
-        )
-    }
+    //     return (
+    //         <List>{listItems}</List>
+    //     )
+    // }
 
     render() {
         return (
@@ -84,8 +84,8 @@ class CustomCardDetails extends Component {
                         </Icon>
                     </div>
                     <div className='ten columns' style={{textAlign: 'left', display: 'flex', flexDirection: 'column', height: '20px'}}>
-                        <h5>{this.props.details.title} · {this.props.details.role}</h5>
-                        <Type>{this.props.details.date}</Type>
+                        <h5>{this.props.details.title} · {this.props.details.type}</h5>
+                        <Stack>{this.props.details.stack}</Stack>
                     </div>
                 </div>
                 <div className='row'>
@@ -94,8 +94,8 @@ class CustomCardDetails extends Component {
                         <Description>{this.props.details.description}</Description>
                     </div>
                     <div className='three columns'>
-                        <Heading>TASKS</Heading>
-                        {this.toolsAndTasks(this.props.details.tasks)}
+                        <Heading>TOOLS</Heading>
+                        {/* {this.toolsAndTasks(this.props.details.tasks)} */}
                     </div>
 
                 </div>
@@ -105,4 +105,4 @@ class CustomCardDetails extends Component {
     }
 }
 
-export default CustomCardDetails;
+export default ProjectDetails;

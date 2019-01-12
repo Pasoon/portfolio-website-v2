@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import CustomCard from '../components/CustomCard';
+import MyProjects from '../components/MyProjects';
+import ProjectDetails from '../components/ProjectDetails';
 import Container from '../components/elements/Container';
-import * as constants from '../constants';
+import Fade from 'react-reveal/Fade';
 
 const ProjectsContent = styled.div`
     height: 100%;
@@ -11,30 +12,45 @@ const ProjectsContent = styled.div`
 
 
 class Projects extends Component {
+    constructor(props) {
+        super(props);
+        this.state = { 
+            showDetails: false,
+            details: '' 
+        };
+
+        this.cardCallback = (dataFromChild) => {
+            this.setState({
+                showDetails: dataFromChild.showDetails,
+                details: dataFromChild.details,
+            });
+        }
+
+        this.detailsCallback = () => {
+            this.setState({
+                showDetails: false,
+                details: '',
+            })
+        }
+      }
+
+
+    componentWillReceiveProps(){
+        this.setState({
+            showDetails: false,
+            details: '',
+        })
+    }
+    
   render() {
     return (
       <Container>
           <ProjectsContent>
-            <div className = "row">
-                <div className = "six columns">
-                    <CustomCard 
-                        title={constants.MUNCHIES.title}
-                        description={constants.MUNCHIES.stack}
-                        icon={constants.MUNCHIES.logo}
-                        image={constants.MUNCHIES.image}/>
-                </div>
-                <div className = "six columns">
-                    <CustomCard 
-                        title={constants.GRADED.title}
-                        description={constants.GRADED.stack}
-                        icon={constants.GRADED.logo}
-                        image={constants.GRADED.image}/>
-                </div>
-            </div>
-            {/* <div style={{paddingTop: '20px'}} className = "row">
-                <div className = "six columns"><CustomCard/></div>
-                <div className = "six columns"><CustomCard/></div>
-            </div> */}
+            {
+                this.state.showDetails ? 
+                <ProjectDetails details={this.state.details} callbackFromParent={this.detailsCallback}/> : 
+                <MyProjects callbackFromParent={this.cardCallback}/>
+            }
           </ProjectsContent>
       </Container>
     );

@@ -11,13 +11,7 @@ class Internships extends Component {
         super(props);
         this.state = { 
             showDetails: false,
-            details: {
-                title: '',
-                role: '',
-                date: '',
-                image: '',
-                description: '',
-            }
+            details: '',
         };
     }
 
