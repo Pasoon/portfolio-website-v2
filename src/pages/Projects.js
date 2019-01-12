@@ -1,17 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import CustomCard from '../components/CustomCard';
+import Container from '../components/elements/Container';
 import * as constants from '../constants';
-
-
-const Container = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 650px;
-    width: 100%;
-    padding-top: 50px;
-`;
 
 const ProjectsContent = styled.div`
     height: 100%;

@@ -25,14 +25,14 @@ const Icon = styled.div`
     width: 65px;
 `;
 
-const Description = styled.p`
+const Type = styled.p`
     text-transform: uppercase;
     font-size: 15px;
     font-weight: 200;
     color: #BBBABA;
 `;
 
-const Text = styled.p`
+const Description = styled.p`
     text-align: left;
     padding-top: 10px;
     font-size: 16px;
@@ -85,13 +85,13 @@ class CustomCardDetails extends Component {
                     </div>
                     <div className='ten columns' style={{textAlign: 'left', display: 'flex', flexDirection: 'column', height: '20px'}}>
                         <h5>{this.props.details.title} · {this.props.details.role}</h5>
-                        <Description>{this.props.details.date}</Description>
+                        <Type>{this.props.details.date}</Type>
                     </div>
                 </div>
                 <div className='row'>
                     <div className='nine columns'>
                         <Heading>OVERVIEW</Heading>
-                        <Text>{this.props.details.description}</Text>
+                        <Description>{this.props.details.description}</Description>
                     </div>
                     <div className='three columns'>
                         <Heading>TASKS</Heading>

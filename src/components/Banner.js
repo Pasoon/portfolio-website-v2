@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import img from '../images/space.jpg';
 import logo from '../images/icon.png';
 
-const Header = styled.div`
+const BannerContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -79,10 +79,10 @@ class Banner extends Component {
   render() {
     return (
       <div>
-        <Header>
+        <BannerContainer>
             <Title>Hey I'm Pasoon, an Ottawa based <br/>Software Developer.</Title>
             <Logo src={logo}/>
-        </Header>
+        </BannerContainer>
       </div>
     );
   }
