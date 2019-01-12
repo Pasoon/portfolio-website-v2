@@ -62,10 +62,6 @@ export const NOKIA = {
             emoji: 'desktop_computer'
         },
         {
-            title: 'Networking',
-            emoji: 'house'
-        },
-        {
             title: 'Designing',
             emoji: 'man_artist'
         },
@@ -92,10 +88,6 @@ export const SIGNIANT = {
         {
             title: 'Web Dev',
             emoji: 'desktop_computer'
-        },
-        {
-            title: 'Networking',
-            emoji: 'house'
         },
         {
             title: 'Concepting',

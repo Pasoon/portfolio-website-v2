@@ -11,7 +11,7 @@ const Container = styled.div`
     padding-top: 10px;
 `;
 
-const MyStoryContent = styled.div`
+const AboutContent = styled.div`
     width: 700px;
     height: 100%;
 `;
@@ -56,11 +56,11 @@ const MyImage = styled.img`
     object-fit: cover;
 `;
 
-class MyStory extends Component {
+class About extends Component {
   render() {
     return (
       <Container>
-          <MyStoryContent>
+          <AboutContent>
               <div className='row'>
                   <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}} className='four columns'>
                     <Heading>IT'S A ME</Heading>
@@ -97,11 +97,11 @@ class MyStory extends Component {
                       <a href={require('../documents/Benefits_Antivirus.pdf')}>Benefits of Antivirus</a>
                   </div>
               </div>
-          </MyStoryContent>
+          </AboutContent>
       </Container>
         
     );
   }
 }
 
-export default MyStory;
+export default About;

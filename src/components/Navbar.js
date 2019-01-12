@@ -7,10 +7,10 @@ import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
-import MyStory from '../pages/MyStory';
+import About from '../pages/About';
 import Work from '../pages/Work';
 import Projects from '../pages/Projects';
-import Contact from '../pages/Contact';
+import Chat from '../pages/Chat';
 
 
 function TabContainer({ children, dir }) {
@@ -107,7 +107,7 @@ class Navbar extends React.Component {
           >
             <Tab 
               classes={{ root: classes.tabRoot, selected: classes.tabSelected }}
-              label="My Story" 
+              label="About" 
             />
             <Tab 
               classes={{ root: classes.tabRoot, selected: classes.tabSelected }}
@@ -119,7 +119,7 @@ class Navbar extends React.Component {
             />
             <Tab 
               classes={{ root: classes.tabRoot, selected: classes.tabSelected }}
-              label="Contact" 
+              label="Chat" 
             />
           </Tabs>
         </AppBar>
@@ -128,10 +128,10 @@ class Navbar extends React.Component {
           index={this.state.value}
           onChangeIndex={this.handleChangeIndex}
         >
-          <TabContainer dir={theme.direction}><MyStory/></TabContainer>
+          <TabContainer dir={theme.direction}><About/></TabContainer>
           <TabContainer dir={theme.direction}><Work/></TabContainer>
           <TabContainer dir={theme.direction}><Projects/></TabContainer>
-          <TabContainer dir={theme.direction}><Contact/></TabContainer>
+          <TabContainer dir={theme.direction}><Chat/></TabContainer>
         </SwipeableViews>
       </div>
     );
