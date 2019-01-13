@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Container from '../components/elements/Container';
+import {FaGithub} from 'react-icons/fa';
 const emoji = require('emoji-dictionary');
 
 const Icon = styled.div`
@@ -64,12 +65,36 @@ const Seperator = styled.hr`
   }
 `
 
+const ImageContainer = styled.div`
+    height: 100%;
+    width: 100%;
+    @media (max-width: 375px) {
+        margin-top: 100px;
+  }
+`;
+
 const List = styled.ul`
     padding-top: 10px;
     font-weight: 700;
     font-size: 12px;
     list-style: none;
     text-align: left;
+`;
+
+const MoreInfo = styled.a`
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+  color: black;
+  text-decoration: none;
+  &:hover{
+    color: ${props=>props.color};
+    text-decoration: underline;
+  }
+`
+
+const CustomGithubLogo = styled(FaGithub)`
+    margin-right: 5px;
 `;
 
 class ProjectDetails extends Component {
@@ -101,8 +126,13 @@ class ProjectDetails extends Component {
                             <Stack>{this.props.details.stack}</Stack>
                         </div>
                     </div>
-                    <Seperator></Seperator>
                     <div className='row'>
+                        <ImageContainer>
+                            <Image src={this.props.details.overviewImages}/>
+                        </ImageContainer>
+                    </div>
+                    <Seperator></Seperator>
+                    <div className='row' style={{marginBottom:'20px'}}>
                         <div className='nine columns'>
                             <Heading>OVERVIEW</Heading>
                             <Description>{this.props.details.description}</Description>
@@ -112,6 +142,9 @@ class ProjectDetails extends Component {
                             {/* {this.toolsAndTasks(this.props.details.tasks)} */}
                         </div>
 
+                    </div>
+                    <div className='row' style={{marginBottom:'50px'}}>
+                        <MoreInfo color={this.props.details.color} href={this.props.details.githubLink}><CustomGithubLogo/> To see more of this project.</MoreInfo>
                     </div>
                     {/* <button onClick={this.props.callbackFromParent}>Close</button> */}
                 </DetailsContent>
