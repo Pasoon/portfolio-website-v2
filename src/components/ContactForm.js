@@ -12,11 +12,11 @@ class ContactForm extends Component {
     return (
             <form action="https://formspree.io/pasoon.azimi10@gmail.com" method="POST">
                 <VerticalWrapper>
-                    <input type="text" name="name" id='name' placeholder="John Doe"/>
-                    <input type="email" name="email" id='email' placeholder="john.doe@email.com"/>
-                    <textarea type="text" name="message" id='message' placeholder="Hey! Lets talk!"></textarea>
-                    <input type="hidden" name="_subject" value="Website Contact"/> {/* <input type="submit" name="submit" value="Submit"/> */}
-                    <input type="submit" name="submit" value="Submit"/>
+                    <input style={{color: '#627290', border: '1px solid #627290'}} type="text" name="name" id='name' placeholder="Jon Snow"/>
+                    <input style={{color: '#627290', border: '1px solid #627290'}} type="email" name="email" id='email' placeholder="jon.snow@email.com"/>
+                    <textarea style={{color: '#627290', border: '1px solid #627290'}} type="text" name="message" id='message' placeholder="You know nothing jon snow..."></textarea>
+                    <input style={{color: '#627290', border: '1px solid #627290'}} type="hidden" name="_subject" value="Website Contact"/> {/* <input type="submit" name="submit" value="Submit"/> */}
+                    <input style={{color: '#627290', border: '1px solid #627290'}}type="submit" name="submit" value="Submit"/>
                 </VerticalWrapper>
             </form>
     );

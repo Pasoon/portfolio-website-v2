@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "staging": "portfolio-website-v2",
+    "default": "portfolio-website-v2"
+  }
+}
