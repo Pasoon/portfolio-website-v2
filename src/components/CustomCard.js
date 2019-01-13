@@ -41,7 +41,7 @@ const Label = styled.div`
     display: flex;
     flex-direction: column;
     padding-top: 35px;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Karla', Helvetica, sans-serif;
     height: 100px;
     width: 100%;
 `;
@@ -49,6 +49,7 @@ const Label = styled.div`
 const Title = styled.p`
     font-size: 20px;
     font-weight: 600;
+    font-family: 'Karla', Helvetica, sans-serif;
     color: #454545;
 `;
 
@@ -56,6 +57,7 @@ const Description = styled.p`
     text-transform: uppercase;
     font-size: 15px;
     font-weight: 200;
+    font-family: 'Karla', Helvetica, sans-serif;
     color: #BBBABA;
 `;
 

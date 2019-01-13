@@ -59,7 +59,7 @@ const BannerContainer = styled.div`
 const Title = styled.h1`
     text-align: center;
     font-weight: bold;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Karla', Helvetica, sans-serif;
     font-size: 25px;
     color: white;
     line-height: 36px;

@@ -4,7 +4,8 @@ import styled from 'styled-components';
 const Wrapper = styled.p`
     font-size: 15px;
     text-align: left;
-    line-height: 1.7em;
+    line-height: 2.0em;
+    font-family: 'Volkorn', Georgia, serif;
 `;
 
 const TextContainer = styled.div`

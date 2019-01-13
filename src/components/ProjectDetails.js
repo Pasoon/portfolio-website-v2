@@ -27,9 +27,10 @@ const Icon = styled.div`
 
 const Stack = styled.p`
     text-transform: uppercase;
-    font-size: 15px;
-    font-weight: 200;
-    color: #BBBABA;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(0,0,0,0.3);
+    font-family: 'Karla', Helvetica, sans-serif;
 `;
 
 const Description = styled.p`
@@ -37,6 +38,7 @@ const Description = styled.p`
     padding-top: 10px;
     font-size: 16px;
     line-height: 1.7em;
+    font-family: 'Volkorn', Georgia, serif;
 `;
 
 const Image = styled.img`
@@ -45,11 +47,13 @@ const Image = styled.img`
 `;
 
 const Heading = styled.p`
-  color: #CDCDCD;
-  padding-top: 30px;
-  font-weight: 600;
-  font-size: 15px;
-  text-align: left;
+    color: rgba(0, 0, 0, 0.25);
+    letter-spacing: 2px;
+    padding-top: 30px;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: left;
+    font-family: 'Karla', Helvetica, sans-serif;
 `;
 
 const List = styled.ul`

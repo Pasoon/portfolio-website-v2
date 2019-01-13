@@ -40,32 +40,29 @@ class About extends Component {
           <AboutContent>
               <div className='row'>
                   <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}} className='four columns'>
-                    <Header>IT'S A ME</Header>
+                    <Header>Its a me</Header>
                       <ImageContainer>
                         <MyImage src={Pasoon}/>
                       </ImageContainer>
                   </div>
                   <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}} className='eight columns'>
-                      <Header>HI STRANGER</Header>
+                      <Header>Hi Stranger</Header>
                       <Text>I am a Software Developer based in Ottawa, currently studying 
                           Software Engineering at the University of Ottawa. 
                           My experiences from various internships, side projects and influences span all phases 
                           of the development process.  My interest in technology and artistic/creative side at heart has
                           led me into this field. Software Engineering provides myself and others outlet to bring ideas into reality. 
-                          Aswell as development I have many hobbies and interests. 
-                           Playing and watching soccer, playing video games, video editing, 
-                           graphic design are all things I really enjoy to do on my spare time.
-                           Here is my personal website, developed using React.js.</Text>
+                           Here is my portfolio website, developed using React.js.</Text>
                   </div>
               </div>
               <hr></hr>
               <div className='row'>
-                  <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}} className='four columns'>
-                    <Header>EDUCATION</Header>
+                  <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}} className='five columns'>
+                    <Header>Education</Header>
                     <Education/>
                   </div>
-                  <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}} className='eight columns'>
-                      <Header>RESEARCH</Header>
+                  <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}} className='seven columns'>
+                      <Header>Research</Header>
                       <Research/>
                   </div>
               </div>

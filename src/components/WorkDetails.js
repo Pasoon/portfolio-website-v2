@@ -27,9 +27,10 @@ const Icon = styled.div`
 
 const Type = styled.p`
     text-transform: uppercase;
-    font-size: 15px;
-    font-weight: 200;
-    color: #BBBABA;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(0,0,0,0.3);
+    font-family: 'Karla', Helvetica, sans-serif;
 `;
 
 const Description = styled.p`
@@ -37,6 +38,7 @@ const Description = styled.p`
     padding-top: 10px;
     font-size: 16px;
     line-height: 1.7em;
+    font-family: 'Volkorn', Georgia, serif;
 `;
 
 const Image = styled.img`
@@ -45,19 +47,27 @@ const Image = styled.img`
 `;
 
 const Heading = styled.p`
-  color: #CDCDCD;
+  color: rgba(0, 0, 0, 0.25);
+  letter-spacing: 2px;
   padding-top: 30px;
   font-weight: 600;
   font-size: 15px;
   text-align: left;
+  font-family: 'Karla', Helvetica, sans-serif;
 `;
 
 const List = styled.ul`
     padding-top: 10px;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 13px;
     list-style: none;
     text-align: left;
+`;
+
+const Title = styled.h5`
+    font-family: 'Karla', Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
 `;
 
 class CustomCardDetails extends Component {
@@ -84,7 +94,7 @@ class CustomCardDetails extends Component {
                         </Icon>
                     </div>
                     <div className='ten columns' style={{textAlign: 'left', display: 'flex', flexDirection: 'column', height: '20px'}}>
-                        <h5>{this.props.details.title} · {this.props.details.role}</h5>
+                        <Title>{this.props.details.title} · {this.props.details.role}</Title>
                         <Type>{this.props.details.date}</Type>
                     </div>
                 </div>
