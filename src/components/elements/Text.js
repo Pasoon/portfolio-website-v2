@@ -6,6 +6,8 @@ const Wrapper = styled.p`
     text-align: left;
     line-height: 2.0em;
     font-family: 'Volkorn', Georgia, serif;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 400;
 `;
 
 const TextContainer = styled.div`

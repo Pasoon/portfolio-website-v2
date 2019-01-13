@@ -16,10 +16,10 @@ class Chat extends Component {
     return (
       <Container>
         <ChatContent>
-        <div className='row'>
+          <div className='row'>
                 <Header>SAY HELLO</Header>
                   <Text> <a href="mailto:pasoon.azimi10@gmail.com">Email</a> is probably the most likely place I'll respond, but feel free to get in touch
-                    with any of the links I've provided. If the right project rolls along, I'm always down for freelance work! </Text>
+                    with any of the links I've provided. If the right project rolls along, I'm always down for freelance work! <a href={require('../documents/Resume.pdf')}>Resume!</a></Text>
           </div>
           <div className='row' style={{display: 'flex', flexDirection: 'column'}}>
               <Header>CONTACT</Header>

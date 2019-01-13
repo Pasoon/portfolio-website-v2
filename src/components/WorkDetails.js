@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import Container from '../components/elements/Container';
 const emoji = require('emoji-dictionary');
 
-const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-    height: 400px;
-    width: 750px;
-    padding: 20px 20px 20px 20px;
-    background-color: white;
+const DetailsContent = styled.div`
+    height: 100%;
 `;
 
 const Icon = styled.div`
@@ -20,6 +16,11 @@ const Icon = styled.div`
     -moz-border-radius: 500px;
     -ms-border-radius: 500px;
     -o-border-radius: 500px;
+
+    @media (max-width: 375px) {
+        height: 50px;
+        width: 50px;
+      }
 
     height: 65px;
     width: 65px;
@@ -64,10 +65,15 @@ const List = styled.ul`
     text-align: left;
 `;
 
+const Seperator = styled.hr`
+    @media (max-width: 375px) {
+        margin-top: 50px;
+  }
+`
+
 const Title = styled.h5`
     font-family: 'Karla', Helvetica, sans-serif;
     font-size: 22px;
-    font-weight: 600;
 `;
 
 class CustomCardDetails extends Component {
@@ -87,29 +93,32 @@ class CustomCardDetails extends Component {
     render() {
         return (
             <Container>
-                <div className='row'>
-                    <div className='two columns'>
-                        <Icon>
-                            <Image src={this.props.details.logo}/>
-                        </Icon>
+                <DetailsContent>
+                    <div className='row'>
+                        <div className='two columns'>
+                            <Icon>
+                                <Image src={this.props.details.logo}/>
+                            </Icon>
+                        </div>
+                        <div className='ten columns' style={{textAlign: 'left', display: 'flex', flexDirection: 'column', height: '20px',}}>
+                            <Title>{this.props.details.title} · {this.props.details.role}</Title>
+                            <Type>{this.props.details.date}</Type>
+                        </div>
                     </div>
-                    <div className='ten columns' style={{textAlign: 'left', display: 'flex', flexDirection: 'column', height: '20px'}}>
-                        <Title>{this.props.details.title} · {this.props.details.role}</Title>
-                        <Type>{this.props.details.date}</Type>
-                    </div>
-                </div>
-                <div className='row'>
-                    <div className='nine columns'>
-                        <Heading>OVERVIEW</Heading>
-                        <Description>{this.props.details.description}</Description>
-                    </div>
-                    <div className='three columns'>
-                        <Heading>TASKS</Heading>
-                        {this.tasksList(this.props.details.tasks)}
-                    </div>
+                    <Seperator/>
+                    <div className='row'>
+                        <div className='nine columns'>
+                            <Heading>OVERVIEW</Heading>
+                            <Description>{this.props.details.description}</Description>
+                        </div>
+                        <div className='three columns'>
+                            <Heading>TASKS</Heading>
+                            {this.tasksList(this.props.details.tasks)}
+                        </div>
 
-                </div>
-                {/* <button onClick={this.props.callbackFromParent}>Close</button> */}
+                    </div>
+                    {/* <button onClick={this.props.callbackFromParent}>Close</button> */}
+                </DetailsContent>
             </Container>
         )
     }

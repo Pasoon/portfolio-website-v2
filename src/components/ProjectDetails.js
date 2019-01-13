@@ -1,15 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import Container from '../components/elements/Container';
 const emoji = require('emoji-dictionary');
-
-const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-    height: 400px;
-    width: 750px;
-    padding: 20px 20px 20px 20px;
-    background-color: white;
-`;
 
 const Icon = styled.div`
     overflow: hidden;
@@ -23,6 +15,10 @@ const Icon = styled.div`
 
     height: 65px;
     width: 65px;
+`;
+
+const DetailsContent = styled.div`
+    height: 100%;
 `;
 
 const Stack = styled.p`
@@ -49,12 +45,24 @@ const Image = styled.img`
 const Heading = styled.p`
     color: rgba(0, 0, 0, 0.25);
     letter-spacing: 2px;
-    padding-top: 30px;
+    padding-top: 20px;
     font-weight: 600;
     font-size: 15px;
     text-align: left;
     font-family: 'Karla', Helvetica, sans-serif;
 `;
+
+const Title = styled.h5`
+    font-family: 'Karla', Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+`;
+
+const Seperator = styled.hr`
+    @media (max-width: 375px) {
+        margin-top: 50px;
+  }
+`
 
 const List = styled.ul`
     padding-top: 10px;
@@ -81,29 +89,32 @@ class ProjectDetails extends Component {
     render() {
         return (
             <Container>
-                <div className='row'>
-                    <div className='two columns'>
-                        <Icon>
-                            <Image src={this.props.details.logo}/>
-                        </Icon>
+                <DetailsContent>
+                    <div className='row'>
+                        <div className='two columns'>
+                            <Icon>
+                                <Image src={this.props.details.logo}/>
+                            </Icon>
+                        </div>
+                        <div className='ten columns' style={{textAlign: 'left', display: 'flex', flexDirection: 'column', height: '20px'}}>
+                            <Title>{this.props.details.title} · {this.props.details.type}</Title>
+                            <Stack>{this.props.details.stack}</Stack>
+                        </div>
                     </div>
-                    <div className='ten columns' style={{textAlign: 'left', display: 'flex', flexDirection: 'column', height: '20px'}}>
-                        <h5>{this.props.details.title} · {this.props.details.type}</h5>
-                        <Stack>{this.props.details.stack}</Stack>
-                    </div>
-                </div>
-                <div className='row'>
-                    <div className='nine columns'>
-                        <Heading>OVERVIEW</Heading>
-                        <Description>{this.props.details.description}</Description>
-                    </div>
-                    <div className='three columns'>
-                        <Heading>TOOLS</Heading>
-                        {/* {this.toolsAndTasks(this.props.details.tasks)} */}
-                    </div>
+                    <Seperator></Seperator>
+                    <div className='row'>
+                        <div className='nine columns'>
+                            <Heading>OVERVIEW</Heading>
+                            <Description>{this.props.details.description}</Description>
+                        </div>
+                        <div className='three columns'>
+                            <Heading>TOOLS</Heading>
+                            {/* {this.toolsAndTasks(this.props.details.tasks)} */}
+                        </div>
 
-                </div>
-                {/* <button onClick={this.props.callbackFromParent}>Close</button> */}
+                    </div>
+                    {/* <button onClick={this.props.callbackFromParent}>Close</button> */}
+                </DetailsContent>
             </Container>
         )
     }

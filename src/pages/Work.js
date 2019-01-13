@@ -7,6 +7,7 @@ import Fade from 'react-reveal/Fade';
 
 const WorkContent = styled.div`
     height: 100%;
+    width: 700px;
 `;
 
 class Work extends Component {

@@ -7,6 +7,7 @@ import Fade from 'react-reveal/Fade';
 
 const ProjectsContent = styled.div`
     height: 100%;
+    width: 700px;
 `;
 
 

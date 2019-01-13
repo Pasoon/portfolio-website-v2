@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { FaInstagram, FaTwitter, FaLinkedin, FaGithub, FaYoutube } from 'react-icons/fa';
+import Header from '../components/elements/Header';
+import Text from '../components/elements/Text'
 
 const Container = styled.div`
   display: flex;
@@ -26,25 +28,17 @@ const SocialsWrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-bottom: 50px;
 `;
 
 const VerticalWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    flex-wrap: no-wrap;
     height: 100%;
     padding-right: 50px;
     align-items: flex-start;
 `;
 
-const Heading = styled.p`
-  color: #CDCDCD;
-  padding-top: 30px;
-  font-weight: 600;
-`;
-
-const Text = styled.p`
-`
 
 
 class Footer extends Component {
@@ -54,7 +48,7 @@ return (
     <HorizontalWrapper className='row'>
       <div className='six columns'>
         <VerticalWrapper>
-            <Heading>GET IN TOUCH</Heading>
+            <Header>GET IN TOUCH</Header>
             <Text>Catch me on all my socials below!</Text>
             <SocialsWrapper>
               <FaInstagram/>
@@ -67,8 +61,7 @@ return (
       </div>
       <div className='six columns'>
         <VerticalWrapper>
-            <Heading>© 2019 Pasoon Azimi</Heading>
-            <Text>I built this site using React.js</Text>
+            <Header>© 2019 Pasoon Azimi</Header>
         </VerticalWrapper>
       </div>
     </HorizontalWrapper>
