@@ -20,6 +20,7 @@ const VerticalWrapper = styled.div`
 const Paper = styled.a`
     font-size: 15px;
     padding-bottom: 5px;
+    color: #627290;
 `
 
 

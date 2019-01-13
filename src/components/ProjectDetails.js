@@ -99,17 +99,17 @@ const CustomGithubLogo = styled(FaGithub)`
 
 class ProjectDetails extends Component {
 
-    // tools = (tasks) => {
-    //     console.log(emoji.names)
-    //     console.log(emoji.unicode)
-    //     const listItems = tasks.map((task) => 
-    //         <li>{emoji.getUnicode(task.emoji) + ' ' + task.title}</li>
-    //     );
+    tools = (tools) => {
+        console.log(emoji.names)
+        console.log(emoji.unicode)
+        const listItems = tools.map((tool) => 
+            <li>{tool.title}</li>
+        );
         
-    //     return (
-    //         <List>{listItems}</List>
-    //     )
-    // }
+        return (
+            <List>{listItems}</List>
+        )
+    }
 
     render() {
         return (
@@ -139,7 +139,7 @@ class ProjectDetails extends Component {
                         </div>
                         <div className='three columns'>
                             <Heading>TOOLS</Heading>
-                            {/* {this.toolsAndTasks(this.props.details.tasks)} */}
+                            {this.tools(this.props.details.tools)}
                         </div>
 
                     </div>

@@ -39,6 +39,17 @@ const VerticalWrapper = styled.div`
     align-items: flex-start;
 `;
 
+const Link = styled.a`
+  font-size: 18px;
+  color: black;
+  &:hover{
+    color: #627290;
+  }
+  transition: 'color 0.3s linear',
+  webkitTransition: 'color 0.3s linear',
+  mozTransition: 'color 0.3s linear',
+`
+
 
 
 class Footer extends Component {
@@ -51,11 +62,11 @@ return (
             <Header>GET IN TOUCH</Header>
             <Text>Catch me on all my socials below!</Text>
             <SocialsWrapper>
-              <FaInstagram/>
-              <FaTwitter/>
-              <FaYoutube/>
-              <FaLinkedin/>
-              <FaGithub/>
+              <Link href='https://www.instagram.com/pasoonazimi/'><FaInstagram/></Link>
+              <Link href='https://twitter.com/PasoonAzimi'><FaTwitter/></Link>
+              <Link href='https://www.youtube.com/channel/UC-Wlm7BSO_FIPSeBEr5JAJA?view_as=subscriber'><FaYoutube/></Link>
+              <Link href='https://www.linkedin.com/in/pasoon-azimi-310a1b107/'><FaLinkedin/></Link>
+              <Link href='https://github.com/Pasoon'><FaGithub/></Link>
             </SocialsWrapper>
         </VerticalWrapper>
       </div>
