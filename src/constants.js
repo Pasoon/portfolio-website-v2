@@ -14,6 +14,8 @@ import munchiesPics from './images/munchiespics.png';
 import gradedImage from './images/graded.png';
 import gradedLogo from './images/gradedlogo.png';
 import gradedPics from './images/gradedpics.png';
+import googleDevImage from './images/googledevimage.png';
+import googleDevLogo from './images/googledevlogo.png';
 
 // ------------ INTERNSHIPS -------------
 export const WELBI = {
@@ -141,7 +143,7 @@ export const MUNCHIES = {
     type: 'Web Application',
     stack: 'React.js / Python',
     logo: munchiesLogo,
-    image: munchiesPics,
+    image: munchiesImage,
     overviewImages: munchiesPics,
     githubLink: 'https://github.com/Pasoon/munchies-react',
     description: 'Munchies is a web application designed for my database design course which allows users to view the ratings and menus of restaurants. Because the application was to be designed in the scope of the course the database was populated with restaurants locally. The website was designed by focusing on finding what users want to eat fast and in a beautiful way. Once the user searches for a type of food or restaurant the website will bring them to a restaurant page that shows all the relevant information including the menu.',
@@ -168,7 +170,7 @@ export const GRADED = {
     type: 'Mobile Application',
     stack: 'Android',
     logo: gradedLogo,
-    image: gradedPics,
+    image: gradedImage,
     overviewImages: gradedPics,
     githubLink: 'https://github.com/Pasoon/graded-app',
     description: 'Graded is a android application designed to help students keep track of their grades throughout the semester. It was designed with the user experience in mind and because of this the app was kept very simple and user friendly. The application was the final project of my User Experience course and allowed my partner and I to do user research on fellow students, mock up designs and finally code the app in Android Studio. As university students the most important aspect of our lives often revolve around making sure our studies and grades are kept up. Often times because of the many different deliverables and items each course offers it becomes difficult to manage what needs to be done and gauge how one is really doing in each course.',
@@ -182,6 +184,26 @@ export const GRADED = {
         },
         {
             title: 'Realm'
+        },
+    ]
+}
+
+export const GOOGLEDEVPAGE = {
+    title: 'Google Developer Page',
+    type: 'Mobile Applications',
+    stack: 'Android',
+    logo: googleDevLogo,
+    image: googleDevImage,
+    overviewImages: gradedPics,
+    githubLink: 'https://play.google.com/store/apps/dev?id=8381403251919923417',
+    description: '',
+    color: '#',
+    tools: [
+        {
+            title: 'Java'
+        },
+        {
+            title: 'XML'
         },
     ]
 }

@@ -48,6 +48,15 @@ class Internships extends Component {
                             onClick = {()=>this.handleCardClick(constants.GRADED)}/>
                     </div>
                 </div>
+                <div className = "row">
+                    <div className = " twelve columns" style={{display: 'flex', justifyContent: 'center'}}>
+                        <a style={{textDecoration: 'none'}} href='https://play.google.com/store/apps/dev?id=8381403251919923417'><CustomCard 
+                            title={constants.GOOGLEDEVPAGE.title}
+                            description={constants.GOOGLEDEVPAGE.stack}
+                            icon={constants.GOOGLEDEVPAGE.logo}
+                            image={constants.GOOGLEDEVPAGE.image}/></a>
+                    </div>
+                </div>
             </Container>
         )
     }
